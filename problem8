@@ -1,0 +1,4 @@
+import pandas as pd
+
+df_receipt = pd.read_csv('./work/data/receipt.csv')
+df_receipt[['sales_ymd', 'customer_id','product_cd','amount']].query('customer_id == "CS018205000001" & product_cd != "P071401019"')
