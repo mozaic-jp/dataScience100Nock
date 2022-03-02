@@ -1,0 +1,5 @@
+import pandas as pd
+
+df_receipt = pd.read_csv('./work/data/receipt.csv')
+df_receipt.loc[0:9, ['sales_ymd', 'customer_id','product_cd','amount']].\
+rename(columns={'sales_ymd':'sales_date'})
