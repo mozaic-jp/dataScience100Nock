@@ -1,4 +1,0 @@
-import pandas as pd
-
-df_store = pd.read_csv('./work/data/store.csv')
-df_store.query('prefecture_cd != "13" & floor_area <= 900')
