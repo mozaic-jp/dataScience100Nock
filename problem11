@@ -1,4 +1,0 @@
-import pandas as pd
-
-df_store = pd.read_csv('./work/data/store.csv')
-df_store.query("store_cd.str.startswith('S14')", engine='python').head(10)
