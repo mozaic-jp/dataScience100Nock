@@ -1,0 +1,5 @@
+import pandas as pd
+
+df_customer = pd.read_csv('./work/data/customer.csv')
+df_customer.query("status_cd.str.match('^[A-F]+')", engine='python').head(10)
+#df_customer.query("status_cd.str.contains('^[A-F]', regex=True)", engine='python').head(10)
