@@ -1,0 +1,4 @@
+import pandas as pd
+
+df_customer = pd.read_csv('./work/data/customer.csv')
+df_customer.query("customer_id.str.endswith('1')", engine='python').head(10)
