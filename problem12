@@ -1,0 +1,4 @@
+import pandas as pd
+
+df_store = pd.read_csv('./work/data/store.csv')
+df_store.query("address.str.contains('横浜市')", engine='python').head(10)
