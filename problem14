@@ -1,0 +1,5 @@
+import pandas as pd
+
+df_customer = pd.read_csv('./work/data/customer.csv')
+df_customer.query("status_cd.str.match('.*[1-9]$')", engine='python').head(10)
+#df_customer.query("status_cd.str.contains('[1-9]$', regex=True)", engine='python').head(10)
