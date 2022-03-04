@@ -1,0 +1,4 @@
+import pandas as pd
+
+df_customer = pd.read_csv('./work/data/customer.csv')
+df_customer.sort_values('birth_day', ascending = True).head(10)
